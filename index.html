@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Local Json Data</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <form action="" class="form-ctn hid">
+         <h1>LOGIN</h1>
+         <input type="text" class="ip-username" placeholder="Username" />
+         <input type="password" class="ip-password" placeholder="Password" />
+         <button class="btn-login">LOGIN</button>
+         <button class="btn-create">CREATE USER</button>
+         <p class="login-message"></p>
+      </form>
+      <div class="user-info hide">
+         <button class="btn-users-list hide">USERS LIST</button>
+         <button class="btn-logout">LOGOUT</button>
+         <div class="profile-ctn">
+            <img src="img/sal.jpg" alt="" class="profile" />
+         </div>
+         <h1 class="cur-username">VISAL</h1>
+      </div>
+      <div class="users-lists-ctn hide">
+         <button class="btn-back-to-user">BACK</button>
+         <div class="user-lists"></div>
+      </div>
+   </body>
+   <script src="app.js"></script>
+</html>

@@ -1,0 +1,42 @@
+[
+   {
+      "id": "1000",
+      "name": "ADMIN",
+      "username": "admin",
+      "password": "123",
+      "profile": "img/sal.jpg",
+      "account": "admin"
+   },
+   {
+      "id": "1001",
+      "name": "SAN VISAL",
+      "username": "sal",
+      "password": "123",
+      "profile": "img/sal.jpg",
+      "account": "admin"
+   },
+   {
+      "id": "1002",
+      "name": "KAO CHHENGSOKHUOR",
+      "username": "huor",
+      "password": "123",
+      "profile": "img/huor.jpg",
+      "account": "admin"
+   },
+   {
+      "id": "1003",
+      "name": "CHAN DANITH",
+      "username": "nith",
+      "password": "123",
+      "profile": "img/nith.jpg",
+      "account": "user"
+   },
+   {
+      "id": "1004",
+      "name": "SETHEARA LIYA",
+      "username": "liya",
+      "password": "123",
+      "profile": "img/liya.jpg",
+      "account": "user"
+   }
+]
