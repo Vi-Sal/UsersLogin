@@ -34,7 +34,7 @@ body {
 
 .user-info {
    max-width: 600px;
-   height: 400px;
+   /* height: 400px; */
    background-color: rgb(54, 207, 72);
    border-radius: 5px;
    margin: auto;
@@ -70,6 +70,7 @@ body {
    border-radius: 50%;
    overflow: hidden;
    padding: 10px;
+   margin-bottom: 30px;
 }
 .profile {
    width: 100%;
@@ -78,8 +79,9 @@ body {
    border: 5px solid rgb(2, 121, 0);
    border-radius: 50%;
 }
-.cur-username {
-   margin-top: 40px;
+.cur-username,
+.cur-id {
+   margin-top: 20px;
    text-align: center;
    color: white;
 }

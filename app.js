@@ -5,6 +5,7 @@ const ipUsername = document.querySelector(".ip-username");
 const ipPassword = document.querySelector(".ip-password");
 const loginMessage = document.querySelector(".login-message");
 const curUsername = document.querySelector(".cur-username");
+const curID = document.querySelector(".cur-id");
 const profile = document.querySelector(".profile");
 
 const formCtn = document.querySelector(".form-ctn");
@@ -69,6 +70,7 @@ function showUser() {
 
 function changeUser(user) {
    curUsername.textContent = user.name;
+   curID.textContent = `ID : ${user.id}`;
    formCtn.classList.add("hide");
    userInfo.classList.remove("hide");
 
