@@ -16,6 +16,8 @@ const btnBackToUser = document.querySelector(".btn-back-to-user");
 
 // DECLARE
 let curUser = "";
+let haveFetched = false;
+let allUsers = "";
 
 // FUNCTIONALITIES
 async function checkUser(e) {
@@ -37,16 +39,15 @@ async function checkUser(e) {
    });
 }
 
-let haveFetched = false;
-
 async function showUserList() {
    if (!haveFetched) {
       const res = await fetch("users.json");
       const users = await res.json();
+      allUsers = users;
 
       users.forEach((user) => {
          const html = `
-            <div class="user-list">
+            <div class="user-list" data-username="${user.username}">
                <span>
                   <img class="user-profile" src="${user.profile}">
                   <span class="user-name">${user.name}</span>
@@ -95,3 +96,14 @@ btnLogin.addEventListener("click", checkUser);
 btnLogout.addEventListener("click", logout);
 btnShowList.addEventListener("click", showUser);
 btnBackToUser.addEventListener("click", backToCurUser);
+
+usersLists.addEventListener("click", (e) => {
+   const clickedUser = e.target.closest(".user-list").dataset["username"];
+   allUsers.forEach((user) => {
+      console.log(user.username);
+      if (user.username === clickedUser) {
+         usersListCtn.classList.add("hide");
+         changeUser(user);
+      }
+   });
+});
